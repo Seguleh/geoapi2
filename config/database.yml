@@ -1,0 +1,16 @@
+default: &default
+  adapter:  <%= ENV["L1_DB_ADAPTER"] %>
+  host:     <%= ENV["L1_DB_HOST"] %>
+  port:     <%= ENV["L1_DB_PORT"] %>
+  database: <%= ENV["L1_DB_NAME"] %>
+  username: <%= ENV["L1_DB_USER"] %>
+  password: <%= ENV["L1_DB_PASS"] %>
+
+development:
+  <<: *default
+
+production:
+  <<: *default
+
+test:
+  <<: *default

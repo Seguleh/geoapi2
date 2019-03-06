@@ -1,0 +1,17 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore all logfiles and tempfiles.
+/log/*
+!/log/.keep
+/tmp
+/public/uploads
+/uploads
+/public/assets
+/dist/
+*.war
+nohup.out
+
+spec/fixtures/files/
+
+/config/master.key
